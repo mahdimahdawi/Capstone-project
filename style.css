@@ -1,0 +1,556 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+html,
+body,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: rgb(214, 228, 241);
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.header.active {
+  border-bottom: 1px solid;
+  box-shadow: 0 10px 0 #aaaaaa;
+  background-color: #262626;
+  margin-right: -8px;
+  transition: all 0.3s ease-in-out;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+
+}
+.nav-menu {
+  position: fixed;
+  top: 75px;
+  flex-wrap: wrap;
+  background-color: #262626;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-image {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  top: 1px;
+}
+
+.nav-menu.active {
+  transform: scale(1);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  background-color: white;
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  background-color: white;
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu-link {
+  color: white;
+  font-weight: 500px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  background-color: transparent;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+
+.hamburger {
+  padding-left: 20px;
+  transition: 2s ease;
+}
+.brand {
+  color: #6070ff;
+  padding-right: 20px;
+  font-family: cursive;
+  transition: 2s ease;
+}
+
+.brand.active {
+  color: white;
+}
+
+.back {
+  background-image: url('/asset/image/back.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.hello {
+  font-weight: bold;
+  background-image: url("/asset/image/cube-sea-3429485_640.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: -20px;
+}
+.title {
+  font-size: 6vw;
+  font-weight: 900;
+  background-image: url("/asset/image/cube-sea-3429485_640.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: 'Cocogoose', sans-serif;
+  letter-spacing: 1px; 
+}
+
+.text-margin {
+  padding: 20px;
+}
+
+.box {
+  margin: 10px;
+  padding: 0 7px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+  margin-top: -30px;
+  background-color: rgb(245, 247, 250);
+}
+
+.margin {
+  margin: 20px;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 7vw;
+  margin-bottom: -10px;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 5vw;
+}
+
+.background {
+  background-image: url(/asset/image/back2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.main-program-text {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+
+.horzintal-line {
+  width: 50px;
+  height: 3px;
+  margin-top: -13px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.card {
+  display: flex;
+  margin: 10px;
+  background-color:hsla(195,70%,90%,0.3);
+}
+
+.freamework-name {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+
+.join-button {
+  padding: 20px 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 5vw;
+  background-color: red;
+  border: 2px solid #262626;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 5px white;
+  margin: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.description {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: justify;
+  padding: 0 10px;
+  
+}
+
+.professional {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.line {
+  width: 150px;
+  height: 3px;
+  background-color: #262626;
+  margin-top: -10px;
+}
+
+.top-developer {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+
+.developer-line {
+  width: 70px;
+  height: 3px;
+  background-color: blueviolet;
+  margin-top: -15px;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.dev-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: 30px 20px;
+}
+
+.developer-card {
+  background-image: url(/asset/image/chess.jpg);
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: left 10px top 10px;
+}
+
+.dev-info {
+  display: block;
+}
+
+.developer-card {
+  display: flex;
+}
+
+.dev-name {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.dev-position {
+  color: red;
+  position: relative;
+  top: -15px;
+  font-family: sans-serif;
+  padding: 7px;
+}
+
+.hr-line {
+  width: 20px;
+  height: 2px;
+  float: left;
+  margin: -5px;
+  background-color: #6070ff;
+}
+
+.dev-description {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-right: 5px;
+  margin-top: 0;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+}
+
+body.active {
+  overflow-y: hidden;
+}
+
+.hello-about {
+  font-size: 3vw;
+  font-weight: 700;
+  background-image: url("/asset/image/cube-sea-3429485_640.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: -10px;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+
+.about-title {
+  font-size: 6vw;
+  font-weight: 900;
+  background-image: url("/asset/image/cube-sea-3429485_640.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 1px; 
+}
+
+.about-box {
+  margin: 10px;
+  padding: 0 15px;
+  border: 2px solid white;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: inset 0 -3em 3em rgba(232, 219, 219, 0.1),
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+  background-color: rgb(245, 247, 250);
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.about-page {
+  background-image: url('/asset/image/back.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: 100vw 270px;
+}
+
+.about-description {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 15px;
+  line-height: 200%;
+}
+
+.contact-us {
+  position: relative;
+  top: -30px;
+  text-decoration: underline;
+  color: #262626;
+  font-family: sans-serif;
+}
+
+.about-content {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.logo-text {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: large;
+}
+
+.logo-imag {
+  margin: 20px;
+  border: 1px solid black ;
+  box-shadow: 1px 3px 3px 1px #262626;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+.see-past {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+.event-image {
+  width: 370px;
+  height: 250px;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.past-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.event-date {
+  position: absolute;
+  top: 30%;
+  font-family: sans-serif;
+  font-size: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.event-name {
+  position: absolute;
+  top: 60%;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 20px;
+  left: 50%;
+  letter-spacing: 2px;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  z-index: 2;
+}
+
+.overley {
+  position: absolute;
+  top: 7%;
+  left: 3%;
+  background-color: red;
+  width: 370px;
+  height: 252px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.partner-section {
+  background-image: url(/asset/image/cube-sea-3429485_640.jpg);
+  margin-bottom: -35px;
+}
+
+.partner-title {
+  padding-top: 20px;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.partner-line {
+  background-color: white;
+  width: 60px;
+  height: 3px;
+  border-radius: 10px;
+  margin-top: -10px;
+  transition-duration: 0.5s;
+}
+
+.microverse {
+  float: left;
+  color: white;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: -20px;
+}
+
+.google {
+  color: white;
+  float: right;
+  margin-top: -10px;
+  margin-right: 20px;
+  font-weight: bolder;
+  font-size: 23px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.facebook {
+  text-align: center;
+  align-items: center;
+  color: white;
+  padding-left: 10px;
+  float: right;
+  margin-right: 50px;
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: cursive;
+}
+
+.cisco {
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-size: 29px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tp-link {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 33px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-decoration: overline;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100px;;
+}
+
+
+.footer-text {
+  margin-top: 65px;
+  font-family: sans-serif;
+  font-size: 10px;
+}
