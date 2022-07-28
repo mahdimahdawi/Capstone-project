@@ -564,10 +564,6 @@ body.active {
     display: none;
   }
 
-  .hello {
-    margin-top: 100px;
-  }
-
   .see-more-freamework {
     display: block;
   }
@@ -677,14 +673,13 @@ body.active {
     margin-top: -80px;
   }
 
-.margin {
-  margin: 30px 0 0 170px;
-}
+  .margin {
+    margin: 30px 0 0 170px;
+  }
 
   .heading {
     font-size: 20px;
     font-family: 'Cocogoose', sans-serif;
-    font-size: 40px;
   }
 
   .text {
@@ -715,6 +710,7 @@ body.active {
   }
 
   .see-more-freamework {
+    display: block;
     margin-left: 660px;
     margin-top: 50px;
     color: white;
@@ -724,10 +720,6 @@ body.active {
 
   .freamework-name {
     margin-top: 0;
-  }
-
-  .description {
-    text-justify: center;
   }
 
   .main-div {
@@ -741,7 +733,6 @@ body.active {
   .dev-info {
     width: 300px;
   }
-
 
   .dev-description {
     margin-top: 10px;
@@ -832,7 +823,6 @@ body.active {
 .menu-link:hover {
   transform: scale(1.1);
   color: rgb(7, 84, 117);
-
 }
 
 .card:hover {
