@@ -46,6 +46,8 @@ function topDeveloper() {
   const developerSection = document.querySelector('.developer');
   developerSection.appendChild(heading);
   developerSection.appendChild(horzintalLine);
+  const newDiv = document.createElement('div');
+  newDiv.className = 'new-div';
   const contentDiv = document.createElement('div');
   contentDiv.className = 'main-div';
 
@@ -86,7 +88,8 @@ function topDeveloper() {
     cardDiv.appendChild(devImage);
     cardDiv.appendChild(devInfo);
     contentDiv.appendChild(cardDiv);
-    developerSection.appendChild(contentDiv);
+    newDiv.appendChild(contentDiv)
+    developerSection.appendChild(newDiv);
   }
   // const showMoreBtn = document.createElement('button');
   // showMoreBtn.className = 'show-more';
