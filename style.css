@@ -1,8 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 html,
 body,
 ::after,
-::before{
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,17 +17,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 li {
   list-style-type: none;
 }
 
 .header.active {
   border-bottom: 1px solid;
-  box-shadow: 0 10px 0 #aaaaaa;
+  box-shadow: 0 10px 0 #aaa;
   background-color: #262626;
   margin-right: -8px;
   transition: all 0.3s ease-in-out;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -56,6 +59,16 @@ li {
   transform: scale(1);
 }
 
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -72,7 +85,7 @@ li {
 
 .menu-link {
   color: white;
-  font-weight: 500px;
+  font-weight: 500;
   font-family: sans-serif;
   text-align: center;
   font-size: 40px;
@@ -81,21 +94,12 @@ li {
   background-color: transparent;
 }
 
-.bar {
-  display: block;
-  width: 35px;
-  height: 5px;
-  margin: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #6070ff;
-}
-
 .hamburger {
   position: fixed;
   padding-left: 20px;
   transition: 2s ease;
 }
+
 .brand {
   color: #6070ff;
   padding-right: 20px;
@@ -113,11 +117,12 @@ li {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .hello {
   font-weight: bold;
   background-image: url("/asset/image/backgrd.jpg");
   background-size: cover;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   color: transparent;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -125,17 +130,18 @@ li {
   margin-top: 25px;
   margin-bottom: -20px;
 }
+
 .title {
   font-size: 6vw;
   font-weight: 900;
   background-image: url("/asset/image/backgrd.jpg");
   background-size: cover;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
   font-family: 'Cocogoose', sans-serif;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
 }
 
 .text-margin {
@@ -147,9 +153,10 @@ li {
   padding: 0 7px;
   border: 2px solid white;
   border-radius: 8px;
-  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-  0 0  0 2px rgb(255,255,255),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0  0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   margin-top: -30px;
   background-color: rgb(245, 247, 250);
 }
@@ -204,7 +211,7 @@ li {
 .card {
   display: flex;
   margin: 10px;
-  background-color:hsla(195,70%,90%,0.3);
+  background-color: hsla(195, 70%, 90%, 0.3);
 }
 
 .freamework-name {
@@ -232,9 +239,7 @@ li {
 .description {
   color: rgb(255, 255, 255);
   font-family: sans-serif;
-  font-weight: justify;
   padding: 0 10px;
-  
 }
 
 .professional {
@@ -276,6 +281,7 @@ li {
 }
 
 .developer-card {
+  display: flex;
   background-image: url(/asset/image/chess.jpg);
   background-repeat: no-repeat;
   background-size: 70px 70px;
@@ -284,10 +290,6 @@ li {
 
 .dev-info {
   display: block;
-}
-
-.developer-card {
-  display: flex;
 }
 
 .dev-name {
@@ -332,7 +334,7 @@ body.active {
   font-weight: 700;
   background-image: url("/asset/image/backgrd.jpg");
   background-size: cover;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   color: transparent;
   font-family: sans-serif;
@@ -347,13 +349,13 @@ body.active {
   font-weight: 900;
   background-image: url("/asset/image/backgrd.jpg");
   background-size: cover;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Cocogoose', sans-serif;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
 }
 
 .about-box {
@@ -362,9 +364,10 @@ body.active {
   border: 2px solid white;
   margin-top: 50px;
   border-radius: 8px;
-  box-shadow: inset 0 -3em 3em rgba(232, 219, 219, 0.1),
-  0 0  0 2px rgb(255,255,255),
-  0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+  box-shadow:
+    inset 0 -3em 3em rgba(232, 219, 219, 0.1),
+    0 0  0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
   background-color: rgb(245, 247, 250);
   text-align: justify;
   line-height: 1.8;
@@ -405,7 +408,7 @@ body.active {
 
 .logo-imag {
   margin: 20px;
-  border: 1px solid black ;
+  border: 1px solid black;
   box-shadow: 1px 3px 3px 1px #262626;
 }
 
@@ -419,6 +422,7 @@ body.active {
   font-weight: 900;
   font-size: 15px;
 }
+
 .event-image {
   width: 370px;
   height: 250px;
@@ -507,12 +511,10 @@ body.active {
   margin-top: 30px;
 }
 
-
 .footer-text {
   margin-top: 65px;
   font-family: sans-serif;
   font-size: 10px;
-  
 }
 
 .top-header {
@@ -535,11 +537,7 @@ body.active {
   display: none;
 }
 
-.see-more-freamework {
-  display: none;
-}
-
-@media (min-width : 768px){
+@media (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -551,7 +549,7 @@ body.active {
   .phone {
     display: none;
   }
-  
+
   .brand {
     display: none;
   }
@@ -562,10 +560,6 @@ body.active {
 
   .past-image {
     display: none;
-  }
-
-  .see-more-freamework {
-    display: block;
   }
 
   .nav-image {
@@ -582,7 +576,6 @@ body.active {
     height: 45px;
     background-color: #262626;
     z-index: 1;
-
   }
 
   .facebook {
@@ -606,7 +599,7 @@ body.active {
     font-family: sans-serif;
   }
 
-  .nav-menu-desktop{
+  .nav-menu-desktop {
     position: fixed;
     height: 0;
     transform: scale(1);
@@ -624,12 +617,13 @@ body.active {
     box-shadow: 0 1px 30px 0;
     margin-right: 30px;
   }
+
   .menu-link {
     color: #262626;
     font-size: 20px;
   }
 
-  .menu-link-1{
+  .menu-link-1 {
     border: 4px solid #f15f1c;
     align-items: center;
     padding: 5px;
@@ -650,9 +644,9 @@ body.active {
     background-image: url(/asset/image/about_bg_01.png), url(/asset/image/back.png);
     background-repeat: no-repeat;
     background-size: auto, cover;
-    background-position: top 400px left 10px, top 100px left ;
+    background-position: top 400px left 10px, top 100px left;
   }
-  
+
   .hello {
     margin-top: 250px;
     margin-left: 150px;
