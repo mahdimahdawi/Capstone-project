@@ -1,19 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+- cloude code website
 
 > Description the project.
+- This website is a Development website that you access to feameworks and top developers list.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JavaScript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://github.com/mahdimahdawi/Capstone-project)
 
 
 ## Getting Started
@@ -25,32 +27,26 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- computer with 2RAM 500GB hard disk
 
 ### Setup
+- after clone the files and documentation simpaly you can click on index.html file
 
 ### Install
+- From above link can access to the resository after that you can copy the address of the repo and clone it to you local envirnment.
 
 ### Usage
-
-### Run tests
-
-### Deployment
+- this site is a educationa site.
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Mahdi Mahdawi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mahdimahdwi](https://github.com/mahdimahdawi/Capstone-project)
+- LinkedIn: [Mahdi Mahdawi](https://linkedin.com/feed)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
