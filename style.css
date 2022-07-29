@@ -116,14 +116,14 @@ li {
 }
 
 .back {
-  background-image: url('./image/back.PNG');
+  background-image: url(./image/back.PNG);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .hello {
   font-weight: bold;
-  background-image: url("./image/backgrd.JPG");
+  background-image: url(./image/backgrd.JPG);
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -137,7 +137,7 @@ li {
 .title {
   font-size: 6vw;
   font-weight: 900;
-  background-image: url("./image/backgrd.JPG");
+  background-image: url(./image/backgrd.JPG);
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -335,7 +335,7 @@ body.active {
 .hello-about {
   font-size: 5vw;
   font-weight: 700;
-  background-image: url("./image/backgrd.JPG");
+  background-image: url(./image/backgrd.JPG);
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -350,7 +350,7 @@ body.active {
 .about-title {
   font-size: 6vw;
   font-weight: 900;
-  background-image: url("./image/backgrd.JPG");
+  background-image: url(./image/backgrd.JPG);
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -377,7 +377,7 @@ body.active {
 }
 
 .about-page {
-  background-image: url('./image/about_bg_01.PNG');
+  background-image: url(./image/about_bg_01.PNG);
   background-repeat: no-repeat;
   background-size: 100%;
 }
