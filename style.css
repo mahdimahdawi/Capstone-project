@@ -23,10 +23,13 @@ li {
 }
 
 .header.active {
+  position: fixed;
+  width: 100%;
+  height: 82px;
+  margin-top: -10px;
   border-bottom: 1px solid;
   box-shadow: 0 10px 0 #aaa;
   background-color: #262626;
-  margin-right: -8px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -113,14 +116,14 @@ li {
 }
 
 .back {
-  background-image: url('/asset/image/back.png');
+  background-image: url('./image/back.PNG');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .hello {
   font-weight: bold;
-  background-image: url("/asset/image/backgrd.jpg");
+  background-image: url("./image/backgrd.JPG");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -134,7 +137,7 @@ li {
 .title {
   font-size: 6vw;
   font-weight: 900;
-  background-image: url("/asset/image/backgrd.jpg");
+  background-image: url("./image/backgrd.JPG");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -177,7 +180,7 @@ li {
 }
 
 .background {
-  background-image: url(/asset/image/back2.jpg);
+  background-image: url(./image/back2.JPG);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   justify-content: center;
@@ -282,7 +285,7 @@ li {
 
 .developer-card {
   display: flex;
-  background-image: url(/asset/image/chess.jpg);
+  background-image: url(./image/chess.JPG);
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: left 10px top 10px;
@@ -332,7 +335,7 @@ body.active {
 .hello-about {
   font-size: 5vw;
   font-weight: 700;
-  background-image: url("/asset/image/backgrd.jpg");
+  background-image: url("./image/backgrd.JPG");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -347,7 +350,7 @@ body.active {
 .about-title {
   font-size: 6vw;
   font-weight: 900;
-  background-image: url("/asset/image/backgrd.jpg");
+  background-image: url("./image/backgrd.JPG");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -374,7 +377,7 @@ body.active {
 }
 
 .about-page {
-  background-image: url('/asset/image/about_bg_01.png');
+  background-image: url('./image/about_bg_01.PNG');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -470,7 +473,7 @@ body.active {
 }
 
 .partner-section {
-  background-image: url(/asset/image/back2.jpg);
+  background-image: url(./image/back2.JPG);
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: -35px;
@@ -492,6 +495,14 @@ body.active {
   margin-top: -10px;
   margin-bottom: 10px;
   transition-duration: 0.5s;
+}
+
+.home-partner {
+  text-align: center;
+}
+
+.home-logo {
+  text-align: center;
 }
 
 .logo-size {
@@ -562,11 +573,16 @@ body.active {
     display: none;
   }
 
+  .event-image {
+    display: none;
+  }
+
   .nav-image {
     display: inline;
     width: 50px;
     height: 50px;
     margin-top: -14px;
+    margin-left: 70px;
   }
 
   .top-header {
@@ -621,6 +637,7 @@ body.active {
   .menu-link {
     color: #262626;
     font-size: 20px;
+    padding: 0 10px;
   }
 
   .menu-link-1 {
@@ -641,7 +658,7 @@ body.active {
   }
 
   .home-page {
-    background-image: url(/asset/image/about_bg_01.png), url(/asset/image/back.png);
+    background-image: url(./image/about_bg_01.PNG), url(./image/back.PNG);
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: top 400px left 10px, top 100px left;
@@ -683,7 +700,7 @@ body.active {
 
   .freamewrok-card {
     display: flex;
-    margin-left: 210px;
+    margin-left: 150px;
     margin-top: 30px;
     width: 80%;
     z-index: 0;
@@ -733,9 +750,10 @@ body.active {
   }
 
   .about-page {
-    background-image: url(/asset/image/nnn.png);
+    background-image: url(./image/nnn.PNG);
     background-size: 90%;
     background-position: top 35px left 90px;
+    margin-top: 230px;
   }
 
   .hello-about {
@@ -791,6 +809,10 @@ body.active {
   .envet-1 {
     display: inline;
     margin: 50px 20px;
+  }
+
+  .home-partner {
+    text-align: center;
   }
 
   .sponsor-logo {
