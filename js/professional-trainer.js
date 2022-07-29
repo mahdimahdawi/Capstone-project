@@ -34,23 +34,25 @@ const developerData = [
     name: 'Linus Torvalds',
     position: 'is a Finnish-American software engineer who is the creator and, his',
     description: 'He also created the distributed version control system Git and the scuba',
-  }
+  },
 ];
 
 function topDeveloper() {
   const heading = document.createElement('h2');
   heading.innerHTML = 'Top Developer';
-  heading.className = 'top-developer'
+  heading.className = 'top-developer';
   const horzintalLine = document.createElement('hr');
   horzintalLine.className = ('developer-line');
   const developerSection = document.querySelector('.developer');
   developerSection.appendChild(heading);
   developerSection.appendChild(horzintalLine);
+  const newDiv = document.createElement('div');
+  newDiv.className = 'new-div';
   const contentDiv = document.createElement('div');
   contentDiv.className = 'main-div';
 
   for (let i = 0; i < developerData.length; i += 1) {
-    const cardDiv = document.createElement('div')
+    const cardDiv = document.createElement('div');
     cardDiv.className = 'developer-card';
     cardDiv.classList.add('flex-item');
     const devImage = document.createElement('img');
@@ -72,12 +74,10 @@ function topDeveloper() {
         cardDiv.classList.add('hide-show-more');
       }
     }
-  
     devImage.src = `${developerData[i].image}`;
     devName.innerHTML = `${developerData[i].name}`;
     devPosition.innerHTML = `${developerData[i].position}`;
     devDescription.innerHTML = `${developerData[i].description}`;
-  
     devInfo.appendChild(devName);
     devInfo.appendChild(devPosition);
     devInfo.appendChild(lineBreak);
@@ -86,16 +86,8 @@ function topDeveloper() {
     cardDiv.appendChild(devImage);
     cardDiv.appendChild(devInfo);
     contentDiv.appendChild(cardDiv);
-    developerSection.appendChild(contentDiv);
+    newDiv.appendChild(contentDiv);
+    developerSection.appendChild(newDiv);
   }
-  // const showMoreBtn = document.createElement('button');
-  // showMoreBtn.className = 'show-more';
-  // showMoreBtn.innerText = 'See more';
-  // contentDiv.appendChild(showMoreBtn);
-  // showMoreBtn.addEventListener('click', () => {
-  //   const cardDiv = document.querySelectorAll('.flex-item');
-  //   Array.from(cardDiv).slice(2).forEach((cardDiv) => cardDiv.classList.toggle('hide-show-more'));
-  //   showMoreBtn.innerText = showMoreBtn.innerText === 'See more' ? 'Show Less' : 'See more';
-  // });
 }
 topDeveloper();

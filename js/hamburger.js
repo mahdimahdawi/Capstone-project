@@ -11,3 +11,10 @@ hamburger.addEventListener('click', () => {
   header.classList.toggle('active');
   body.classList.toggle('active');
 });
+
+document.querySelectorAll('.menu-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+  header.classList.remove('active');
+  body.classList.remove('active');
+}));
