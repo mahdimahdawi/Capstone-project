@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 - From above link can access to the resository after that you can copy the address of the repo and clone it to you local envirnment.
 
 ### Usage
-- this site is a educationa site.
+- this site is a educationa site everyone can accesss to the file and simply can clone this project to local.
 
 
 
@@ -54,9 +54,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
-
-Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
