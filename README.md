@@ -14,7 +14,7 @@
 - JavaScript
 
 ## Live Demo (if available)
-- (Project Demo video) https://drive.google.com/drive/folders/1JiEVO7pgX_NU6N9LesX5xMJ_Gb8UsoVT?usp=sharing
+- (Project Demo video)https://drive.google.com/drive/folders/1JiEVO7pgX_NU6N9LesX5xMJ_Gb8UsoVT?usp=sharing
 [Live Demo Link](https://mahdimahdawi.github.io/Capstone-project/)
 
 
